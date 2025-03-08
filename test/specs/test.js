@@ -19,4 +19,10 @@ describe('Product Adding to the cart', function () {
             await expect(Launchpage.$search()).toHaveValue('apple');
             await expect(ResultsPage.$results()).toBeDisplayed();
     });
+    it('Select the first product with prime tag', async () => {
+            await expect(ResultsPage.$addcart()).toBeDisplayed();
+            await expect(ResultsPage.$addcart()).toBeClickable();
+            await ResultsPage.selectFirstPrimeProduct();
+           
+     });
 })
