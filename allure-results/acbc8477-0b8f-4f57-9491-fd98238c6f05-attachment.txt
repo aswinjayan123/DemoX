@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "./option[normalize-space(@value) = \"search-alias=electronics\"]|./optgroup/option[normalize-space(@value) = \"search-alias=electronics\"]"
+}

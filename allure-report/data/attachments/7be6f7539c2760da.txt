@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "ancestor::div[@data-component-type=\"s-search-result\"]//h2/a"
+}
