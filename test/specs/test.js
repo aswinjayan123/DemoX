@@ -14,4 +14,10 @@ describe('Product Adding to the cart', function () {
         const selectedValue = await Launchpage.$selectoption().getValue();
         expect(selectedValue).toContain('search-alias=electronics');
     });
+    it('Select the first product with prime tag', async () => {
+            await expect(ResultsPage.$addcart()).toBeDisplayed();
+            await expect(ResultsPage.$addcart()).toBeClickable();
+            await ResultsPage.selectFirstPrimeProduct();
+           
+     });
 })
